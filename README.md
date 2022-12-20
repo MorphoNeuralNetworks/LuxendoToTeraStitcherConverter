@@ -6,7 +6,7 @@ LuxendoToTeraStitcherConverter (LTSC) is a tool that converts the Luxendo micros
 ### Luxendo to TeraStitcher Convertion Diagram
 The diagram shows the workflow for converting a whole brain scanned with a Luxendo microscope to the TeraStitcher format. 
 ![Convertion Diagram](https://github.com/MorphoNeuralNetworks/LuxendoToTeraStitcherConverter/blob/main/readme_images/Luxendo_Workflow.png)
-### PseudoStitching Visualization
+### On-the-Fly Visualization with Pseudo-Stitched Whole Brain Images
 The computation and visualization of pseudotitching whole brain images enables the inspection of the quality of the images and the suitability of the scanning settings of the Luxendo microscope.
 ![Luxendo Inspection](https://github.com/MorphoNeuralNetworks/LuxendoToTeraStitcherConverter/blob/main/readme_images/Luxendo_Inspection.png)
 ### Grafical User Interface (GUI)
