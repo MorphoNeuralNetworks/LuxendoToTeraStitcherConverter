@@ -1,19 +1,20 @@
-# MassiveMultiScaleCellDetector_Arias
+# LuxendoToTeraStitcherConverter
 ## Description
-MassiveMultiScaleCellDetector (MMSCD) is a tool adapted to efficiently extract anatomical features from large brain images on the order of Terabytes. The MMSCD enables parallel computations to efficently extract, by now, the **location**, **orientation** and **size** of labeled cells from mouse whole brain images (tested in CLARITY + LSFM).
-
-Currently, the tools is in beta version (the code requires to be revised, updated and cleaned for readability and usability).
+LuxendoToTeraStitcherConverter (LTSC) is a tool that converts the Luxendo microscope format into the TeraStitcher format. The tool changes both the folder structure of scanned tiles (from Luxendo to TeraStitcher) and the image format of tiles (from hdf5 to tif) making it possible to stitch the images acquired with Luxendo LSFM models (MuVi-SPIM and LCS-SPIM) with the TeraStitcher software. There is also the possibility of applying image processing operations to improve the signal to noise ratio of the scan through several contrast stretching strategies (intensity mapping, histogram equalization, CLAHE, etc). Moreover, the tool enables to generate pseudostitched whole brain images on-the-fly during the scanning day to check the quality of the labeling and several settings such as the overlap between scanned tiles and the boundaries of the scan to ensure that the whole brain is on frame. This is essencial at the time of exploring a fast test scan that takes 1 hour before performing the full scan that takes around 2 days.
 
 ## Image Gallery
-### Performance of the Algorithm
-The MMSCD is able to classify **somatic cell detections** from **blob-like detections** (e.g., blood bessels, neurites or noise artifacts) 
-![Algorithm Performance Detail](https://github.com/AdrianAriasAbreu/MassiveMultiScaleCellDetector_Arias/blob/master/readme_images/AlgorithmPerformanceDetail.png)
+### Luxendo to TeraStitcher Convertion Diagram
+The diagram shows the workflow for converting a whole brain scanned with a Luxendo microscope to the TeraStitcher format. 
+![Convertion Diagram](https://github.com/MorphoNeuralNetworks/LuxendoToTeraStitcherConverter/blob/main/readme_images/Luxendo_Workflow.png)
+### PseudoStitching Visualization
+The computation and visualization of pseudotitching whole brain images enables the inspection of the quality of the images and the suitability of the scanning settings of the Luxendo microscope.
+![Luxendo Inspection](https://github.com/MorphoNeuralNetworks/LuxendoToTeraStitcherConverter/blob/main/readme_images/Luxendo_Inspection.png)
 ### Grafical User Interface (GUI)
-The MMSCD comes with a **user-friendly-GUI** that makes it easier both the selection of computing parameters and the visualization of the results, in an interactive way.
-![GUI Demo](https://github.com/AdrianAriasAbreu/MassiveMultiScaleCellDetector_Arias/blob/master/readme_images/GUI_Demo.png)
+The GUI makes the tool more user-friendly. Moreover, users can also use a CLI to launch the tool on a high computing cluster. 
+![GUI Demo](https://github.com/MorphoNeuralNetworks/LuxendoToTeraStitcherConverter/blob/main/readme_images/Luxendo_GUI.png)
 
 ## AUTHORS
 Adrian Arias Abreu
 
 ## LICENCE
-[LICENCE](https://github.com/AdrianAriasAbreu/MassiveMultiScaleCellDetector_Arias/blob/master/LICENCE)
+[LICENCE](https://github.com/MorphoNeuralNetworks/LuxendoToTeraStitcherConverter/blob/main/LICENCE)
